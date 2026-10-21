@@ -39,5 +39,12 @@
             <span>en tu teclado para continuar!</span>
         </p>
     </main>
+     <script>
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" && !event.repeat) {
+                window.location.href = "tutorial2.html";
+            }
+        });
+    </script>
 </body>
 </html>
